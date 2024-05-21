@@ -18,6 +18,9 @@ body {
     color: #3a3a3a;
     font-family: lato, sans-serif;
 }
+h1 {
+    font-family: 'oswlald', sans-serif;
+}
 /*--header--*/
 header {
     background-color: lightcoral;
