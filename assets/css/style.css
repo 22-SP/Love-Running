@@ -20,6 +20,9 @@ body {
 }
 h1 {
     font-family: 'oswlald', sans-serif;
+    text-tranform: uppercase;
+    letter-spacing: 2px;
+    color: #252525
 }
 /*--header--*/
 header {
@@ -29,6 +32,10 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*--main--*/
