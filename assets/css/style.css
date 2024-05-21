@@ -18,6 +18,14 @@ body {
     color: #3a3a3a;
     font-family: lato, sans-serif;
 }
+#menu {
+    font-size: 110%
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+#menu > li {
+    margin-bottom: 1em;
+}
 h1 {
     font-family: 'oswlald', sans-serif;
     text-tranform: uppercase;
@@ -36,6 +44,19 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
+}
+.active {
+    border-botttom: 1px solid #3a3a3a;
+
+}
+/*--navbar styles ith a dropdown menu--*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    padding: 0 1em;
+    display: none;
 }
 
 /*--main--*/
