@@ -21,9 +21,9 @@ h1,
 h2, 
 h3 {
     font-family: 'oswlald', sans-serif;
-    text-tranform: uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525
+    color: #252525;
 }
 
 /*--header--*/
@@ -50,7 +50,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 .active {
@@ -64,7 +64,6 @@ nav {
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    padding: 0 1em;
     display: none;
     top: 100%;
 }
@@ -106,11 +105,12 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2, 
+#cover-text>h3 {
     color: #ffffff;
 }
 #reasons {
-    width: 90px;
+    width: 90%;
     margin: 20px auto;
 }
 
@@ -135,18 +135,17 @@ main {
 }
 
 #circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
     height: 90vw;
     width: 90vw;
     margin: 20px;
-    background: url("../images/reasons-image.webp") no-repeat top center/cover;
-    /* makes the square image into a circle */
     border-radius: 50%;    
     max-width: 300px;
     max-height: 300px;
 }
 #benefits-image {
     diplay: flex:
-    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -160,7 +159,7 @@ main {
     list-style-type: none;
 }
 #social-networks i {
-    font-size:160%;
+    font-size: 160%;
     padding: 5%;
     color: #3a3a3a
 }
@@ -178,7 +177,7 @@ main {
     #menu {
         display: flex;
     }
-    #menu > li {
+    #menu>li {
        padding-left: 1rem;
     }
     .nav-toggle-label {
@@ -207,16 +206,30 @@ main {
     flex-direction: column;
     width: 100%;
 }
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     width: 75%;
 }
 
-#benefits-mental > div {
+#benefits-mental>div {
     text-align: end;
     align-self: flex-end;
-
 }
+#benefits > div {
+    flex: 1;
+} 
+#benefits-image {
+    order: 0;
+}
+#benefits-mental {
+    order: 1;
+}
+#benefts-mental > div {
+    align-self: flex-start;
+}
+#benefits-physical > div {
+    align-self: flex-end;
+} 
 /* Large devices (laptops and desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
