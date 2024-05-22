@@ -189,9 +189,18 @@ hr {
     height: 90vw;
     width: 90vw;
     margin: 20px;
-    background: url("../images/reasons-image.webp") no-repeat top center-cover;
-}
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
+    /* makes the square image into a circle */
+    border-radius: 50%;    
+    max-width: 300px;
+    max-height: 300px;
 
+}
+#benefits-image {
+    diplay: flex:
+    text-align: center;
+    justify-content: center;
+}
 /* Large devices (laptops and desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
